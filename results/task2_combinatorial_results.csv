@@ -1,0 +1,5 @@
+combination,genes,n_genes,mean_shift,se_shift,p_value,individual_sum,synergy,rationale
+TDP43_full_axis,TARDBP+STMN2+UNC13A,3,0.00012351692,4.7989579616114494e-05,0.011948908719428135,4.7734975e-05,7.578194e-05,Full TDP-43 axis: driver KD + two downstream cryptic exon target restorations
+axonal_transport_dual_KD,DCTN1+DYNC1H1,2,-1.2709498e-05,5.469482857733965e-05,0.8176316772683572,-3.3745768e-05,2.103627e-05,Dual retrograde transport disruption: dynactin anchor + dynein motor
+autophagy_axis_dual_KD,TBK1+OPTN,2,4.4985412e-05,3.163708897773177e-05,0.1602669446399354,3.8691163e-05,6.294249e-06,Selective autophagy axis: TBK1 kinase + OPTN receptor — co-loss-of-function in ALS
+TDP43_plus_autophagy,TARDBP+TBK1+OPTN,3,1.9290448e-05,3.642915398813784e-05,0.5994562712795154,3.9254424e-05,-1.9963976e-05,Cross-axis: TDP-43 aggregation driver + autophagy clearance failure — maximal disease state
