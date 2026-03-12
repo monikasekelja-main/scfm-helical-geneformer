@@ -9,7 +9,7 @@
 
 This project applies GeneFormer V2 (via the [Helical](https://github.com/helicalAI/helical) Python package) to simulate in-silico gene perturbations in ALS-vulnerable motor cortex neurons and interpret the resulting embedding shifts for drug target prioritisation.
 
-The analysis uses the Pineda et al. (*Cell* 2024) motor cortex snRNA-seq dataset (Brodmann Area 4, primary motor cortex) containing 112,014 cells from sporadic ALS and pathologically normal donors. A curated 10-gene panel spanning five mechanistic ALS axes is systematically perturbed in two disease-vulnerable populations (VAT1L⁺ upper motor neurons and SCN4B⁺ deep-layer projection neurons) using a paired-cell experimental design.
+The analysis uses the Pineda et al. (*Cell* 2024) motor cortex snRNA-seq dataset (Brodmann Area 4, primary motor cortex) containing 112,014 cells from sporadic ALS and pathologically normal donors. A curated 10-gene panel (see slides/ALS_Priority_Gene_Targets.pdf) spanning five mechanistic ALS axes is systematically perturbed in two disease-vulnerable populations (VAT1L⁺ upper motor neurons and SCN4B⁺ deep-layer projection neurons) using a paired-cell experimental design.
 
 ### Key Findings
 
@@ -31,7 +31,7 @@ scfm-coding-challenge/
 ├── data/                                 # Dataset (downloaded separately)
 ├── results/                              # Exported embeddings, CSVs, pickles
 ├── figures/                              # All generated figures
-└── slides/                               # Summary slide deck
+└── slides/                               # Summary slide deck and information on ALS gene panel selection
 ```
 
 ## Notebooks
