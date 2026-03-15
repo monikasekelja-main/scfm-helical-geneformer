@@ -21,7 +21,7 @@ The analysis uses the Pineda et al. (*Cell* 2024) motor cortex snRNA-seq dataset
 ## Repository Structure
 
 ```
-scfm-coding-challenge/
+scfm-helical-geneformer/
 ├── README.md
 ├── notebooks/
 │   ├── 01_perturbation_workflow.ipynb    # notebook 01: Generic perturbation framework
@@ -31,12 +31,11 @@ scfm-coding-challenge/
 ├── data/                                 # Dataset (downloaded separately)
 ├── results/                              # Exported embeddings, CSVs, pickles
 ├── figures/                              # All generated figures
-└── slides/                               # Summary slide deck and information on ALS gene panel selection
 ```
 
 ## Notebooks
 
-| Notebook | Task | Description |
+| Notebook | Title | Description |
 |----------|------|-------------|
 | **01** | Perturbation Workflow | Reusable `InSilicoPerturbation` class: knockdown, knockup, dose-response, null distributions, paired-cell design |
 | **02** | ALS Gene Perturbations | 10-gene × 4-population systematic perturbation (44 experiments), FDR correction, dose-response, combinatorial perturbations |
@@ -45,7 +44,7 @@ scfm-coding-challenge/
 
 ## Dataset
 
-The curated dataset is provided by Helical AI (pre-signed S3 URL in the challenge instructions). It contains snRNA-seq count data from Brodmann Area 4 (primary motor cortex) for sporadic ALS and pathologically normal donors, derived from the Pineda et al. (*Cell* 2024) atlas.
+The curated dataset provided with a pre-signed S3 URL. It contains snRNA-seq count data from Brodmann Area 4 (primary motor cortex) for sporadic ALS and pathologically normal donors, derived from the Pineda et al. (*Cell* 2024) atlas.
 
 **Source publication:** Pineda et al., "Single-cell dissection of the human motor and prefrontal cortices in ALS and FTLD", *Cell* 187, 1971–1989 (2024).
 
@@ -113,13 +112,13 @@ python -m ipykernel install --user --name helical --display-name "helical"
 ### 4. Clone the repository
 
 ```bash
-git clone https://github.com/monikasekelja-main/scfm-coding-challenge.git
+git clone https://github.com/monikasekelja-main/scfm-helical-geneformer.git
 ```
 
 
 ### 5. Download the dataset
 
-Ask the Helical AI team to provide you with the S3 AWS URL to counts_combined_filtered_BA4_sALS_PN.h5ad and store it in the /data directory
+Contact me to provide you with a link to the dataset "counts_combined_filtered_BA4_sALS_PN.h5ad" and store it in the /data directory
 
 
 --
@@ -128,7 +127,7 @@ Ask the Helical AI team to provide you with the S3 AWS URL to counts_combined_fi
 
 ### Model versioning
 
-The challenge specifies `gf-12L-95M-i4096`. The Helical API automatically redirects this to `gf-12L-38M-i4096` with a deprecation warning — they are the same model. Both names are documented in the notebooks for transparency.
+The Helical API automatically redirects this to `gf-12L-38M-i4096` with a deprecation warning — they are the same model. Both names are documented in the notebooks for transparency.
 
 ### GPU memory
 
@@ -150,5 +149,4 @@ The perturbation framework modifies the raw count matrix and re-processes throug
 ---
 
 ## License
-
-This repository contains code developed for the Helical AI coding challenge. The dataset is provided under the terms specified by Helical AI and the original data generators (GEO: GSE174332).
+See LICENSE file.
