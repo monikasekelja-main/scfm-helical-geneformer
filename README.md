@@ -24,10 +24,10 @@ The analysis uses the Pineda et al. (*Cell* 2024) motor cortex snRNA-seq dataset
 scfm-coding-challenge/
 ├── README.md
 ├── notebooks/
-│   ├── 01_perturbation_workflow.ipynb    # Task 1: Generic perturbation framework
-│   ├── 02_als_gene_perturbations.ipynb   # Task 2: ALS gene panel perturbations
-│   ├── 03_embedding_interpretation.ipynb # Task 3: Embedding space interpretation
-│   └── 04_drug_target_prioritisation.ipynb # Task 4: Drug target ranking
+│   ├── 01_perturbation_workflow.ipynb    # notebook 01: Generic perturbation framework
+│   ├── 02_als_gene_perturbations.ipynb   # notebook 02: ALS gene panel perturbations
+│   ├── 03_embedding_interpretation.ipynb # notebook 03: Embedding space interpretation
+│   └── 04_drug_target_prioritisation.ipynb # notebook 04: Drug target ranking
 ├── data/                                 # Dataset (downloaded separately)
 ├── results/                              # Exported embeddings, CSVs, pickles
 ├── figures/                              # All generated figures
