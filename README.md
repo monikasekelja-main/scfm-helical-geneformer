@@ -127,7 +127,7 @@ Contact me to provide you with a link to the dataset "counts_combined_filtered_B
 
 ### Model versioning
 
-The Helical API automatically redirects this to `gf-12L-38M-i4096` with a deprecation warning — they are the same model. Both names are documented in the notebooks for transparency.
+We are using `gf-12L-38M-i4096` GeneFormer model.
 
 ### GPU memory
 
